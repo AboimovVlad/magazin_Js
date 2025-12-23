@@ -1,4 +1,4 @@
-fetch('cards.json') // зчитуємо файл json який я вирішив додати як БД
+fetch('./cards.json') // зчитуємо файл json який я вирішив додати як БД
     .then(response => {
         if (!response.ok) { // Перевірка на помилки
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -63,6 +63,7 @@ function addToBaket(button) {
     countEl.innerText = baketCards.length;
 }
     
+
 
 
 
